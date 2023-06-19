@@ -118,7 +118,7 @@ class BotVK:
         while param_offset < count:
             search_results = new_users_search.get_search_results(offset=param_offset, ).json()
             count = search_results['response']['count']
-            param_offset += 1000
+            param_offset += 50
             for user_number in search_results['response']['items']:
                 session = db.Session()
                 time.sleep(0.2)

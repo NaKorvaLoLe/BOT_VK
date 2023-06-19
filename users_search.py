@@ -27,7 +27,7 @@ class UsersSearch:
                 'age_from': params['age_from'],
                 'age_to': params['age_to'],
                 'status': params['status'],
-                'count': 1000,
+                'count': 50,
                 'offset': offset,
                 'fields': 'domain, bdate, city, sex'
             }
